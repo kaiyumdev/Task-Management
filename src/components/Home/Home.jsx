@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import Banner from "./Banner";
 import ImageSlider from "../ImageSlider/ImageSlider";
+import About from "../../pages/About";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       {/* <Hero></Hero> */}
       <Banner></Banner>
       <ImageSlider></ImageSlider>
+      <About></About>
     </div>
   );
 };
