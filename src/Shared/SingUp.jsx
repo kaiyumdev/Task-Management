@@ -1,8 +1,8 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
-import GoogleLogin from "../Shared/GoogleLogin";
-import GithubLogin from "../Shared/GithubLogin";
+import GoogleLogin from "./GoogleLogin";
+import GithubLogin from "./GithubLogin";
 
 const SingUp = () => {
   const { createUser, user } = useAuth();
@@ -26,11 +26,12 @@ const SingUp = () => {
     }
     if (password === confirm_password) {
       createUser(email, password).then((data) => {
-        if (data?.user?.email) {
-          const userInfo = {
-            email: data?.user?.email,
-            name: name,
-          };
+        console.log(data)
+        // if (data?.user?.email) {
+        //   const userInfo = {
+        //     email: data?.user?.email,
+        //     name: name,
+        //   };
         //   fetch("https://medical-corner-server.onrender.com/user", {
         //     method: "POST",
         //     headers: {
@@ -41,7 +42,7 @@ const SingUp = () => {
         //   .then((data) => {
         //     localStorage.setItem("token", data?.token);
         //   });
-        }
+        // }
       });
     }
   };
