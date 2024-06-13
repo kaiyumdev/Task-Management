@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Banner from "./Banner";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import About from "../../pages/About";
+import Contact from "../../pages/Contact";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner></Banner>
       <ImageSlider></ImageSlider>
       <About></About>
+      <Contact></Contact>
     </div>
   );
 };
