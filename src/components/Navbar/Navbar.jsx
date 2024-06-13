@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import useAuth from '../../hooks/useAuth';
+// import useAuth from '../../hooks/useAuth';
 
 const Navbar = () => {
-    const { logOut, user } = useAuth();
+    // const { logOut, user } = useAuth();
 
-    const handleLogout = async () => {
-        await logOut()
-    }
+    // const handleLogout = async () => {
+    //     await logOut()
+    // }
 
     return (
         <div className="navbar bg-white my-3 px-10">
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <li><Link to={"/about"}>About</Link></li>
                         <li><Link to={"/contact"}>Contact</Link></li>
                         <li><Link className='bg-customBlue rounded-lg' to={"/appointment"}>Appointment</Link></li>
-                        {!user && <li><Link to={"/registration"}>Registration</Link></li>}
+                        {/* {!user && <li><Link to={"/registration"}>Registration</Link></li>} */}
                     </ul>
                 </div>
                 <Link className="btn btn-ghost text-xl" to="/">
@@ -39,7 +39,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-2">
-                {user ? (
+                {/* {user ? (
                     <>
                         <button
                             onClick={handleLogout}
@@ -57,7 +57,7 @@ const Navbar = () => {
                     <ul className="hidden lg:flex hover:btn-ghost p-2 shadow rounded-box ">
                         <li><Link to={"/registration"}>Registration</Link></li>
                     </ul>
-                )}
+                )} */}
             </div>
         </div>
     )
