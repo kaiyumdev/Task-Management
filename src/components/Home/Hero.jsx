@@ -4,9 +4,9 @@ const Hero = () => {
   return (
 <div class="bg-black text-white mx-auto px-4 py-10">
   <div class="flex flex-col items-center">
-    <div class="text-center">
+    <div class="text-center max-w-3xl">
       <h1 class="text-4xl font-bold mb-4">
-        Create a modern project management website with Taskxio
+        Create a modern project management website in Webflow with Taskxio
       </h1>
       <p class="text-lg mb-8">
         Experience a modern Webflow template for a project management site. Create websites for Build It companies, startups, tech firms, corporate businesses, consulting firms, freelancers, and nonprofits business.
@@ -32,6 +32,7 @@ const Hero = () => {
     </div> */}
   </div>
 </div>
+
   )
 }
 
