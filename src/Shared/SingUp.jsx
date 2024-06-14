@@ -1,8 +1,8 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import useAuth from "../hooks/useAuth";
 import GoogleLogin from "./GoogleLogin";
 import GithubLogin from "./GithubLogin";
+import useAuth from "../hooks/useAuth";
 
 const SingUp = () => {
   const { createUser, user } = useAuth();

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import useAuth from '../../hooks/useAuth';
+import useAuth from '../../hooks/useAuth';
 import logo from "../../assets/images/logo.png"
 
 const Navbar = () => {
-    // const { logOut, user } = useAuth();
+    const { logOut, user } = useAuth();
 
-    // const handleLogout = async () => {
-    //     await logOut()
-    // }
+    const handleLogout = async () => {
+        await logOut()
+    }
 
     return (
         <div className="navbar bg-black text-white px-10 py-8">
@@ -40,7 +40,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end space-x-2">
-                {/* {user ? (
+                {user ? (
                     <>
                         <button
                             onClick={handleLogout}
@@ -56,9 +56,9 @@ const Navbar = () => {
                     </>
                 ) : (
                     <ul className="hidden lg:flex hover:btn-ghost p-2 shadow rounded-box ">
-                        <li><Link to={"/registration"}>Registration</Link></li>
+                        <li><Link to={"/signup"}>SignUp</Link></li>
                     </ul>
-                )} */}
+                )}
             </div>
         </div>
     )
