@@ -64,7 +64,7 @@ export const router = createBrowserRouter([
     //   {
     //     path: "/dashboard/allTasks/edit/:id",
     //     element:<PrivateRoute> <EditTask></EditTask></PrivateRoute>,
-    //     loader: ({ params }) => fetch(`http://localhost:5001/tasks/${params.id}`)
+    //     loader: ({ params }) => fetch(`https://task-management-server-qh4x.onrender.com/tasks/${params.id}`)
     // }
     ],
   },

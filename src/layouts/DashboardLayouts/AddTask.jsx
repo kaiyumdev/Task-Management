@@ -6,7 +6,7 @@ function AddTask() {
 
   const onSubmit = async(data) => {
     console.log(data)
-    await fetch("http://localhost:5001/tasks", {
+    await fetch("https://task-management-server-qh4x.onrender.com/tasks", {
         method: "POST",
         headers:{ "Content-type": "application/json"},
         body: JSON.stringify(data)

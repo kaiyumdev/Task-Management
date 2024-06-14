@@ -16,7 +16,7 @@
 //     }, [editService, setValue]);
 
 //     const onSubmit = async (data) => {
-//         await fetch(`http://localhost:5001/tasks/${editService._id}`, {
+//         await fetch(`https://task-management-server-qh4x.onrender.com/tasks/${editService._id}`, {
 //             method: "PATCH",
 //             headers: {
 //                 "Content-type": "application/json", 
@@ -102,7 +102,7 @@
 
 //   const onSubmit = async (data) => {
 //     try {
-//       const response = await fetch(`http://localhost:5001/tasks/${task._id}`, {
+//       const response = await fetch(`https://task-management-server-qh4x.onrender.com/tasks/${task._id}`, {
 //         method: "PATCH",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify(data)
@@ -195,7 +195,7 @@
 
 //   const onSubmit = async (data) => {
 //     try {
-//       const response = await fetch(`http://localhost:5001/tasks/${task._id}`, {
+//       const response = await fetch(`https://task-management-server-qh4x.onrender.com/tasks/${task._id}`, {
 //         method: "PATCH",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify(data)

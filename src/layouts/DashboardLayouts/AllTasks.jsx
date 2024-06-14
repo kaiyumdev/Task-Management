@@ -4,7 +4,7 @@
 //   const [tasks, setTasks] = useState([]);
 
 //   useEffect(() => {
-//     fetch("http://localhost:5001/tasks")
+//     fetch("https://task-management-server-qh4x.onrender.com/tasks")
 //       .then((res) => res.json())
 //       .then((data) => setTasks(data));
 //   }, []);
@@ -55,7 +55,7 @@
 //   const [tasks, setTasks] = useState([]);
 
 //   useEffect(() => {
-//     fetch("http://localhost:5001/tasks")
+//     fetch("https://task-management-server-qh4x.onrender.com/tasks")
 //       .then((res) => res.json())
 //       .then((data) => setTasks(data));
 //   }, []);
@@ -119,7 +119,7 @@
 
 //   const fetchTasks = async () => {
 //     try {
-//       const res = await fetch('http://localhost:5001/tasks');
+//       const res = await fetch('https://task-management-server-qh4x.onrender.com/tasks');
 //       const data = await res.json();
 //       setTasks(data);
 //     } catch (error) {
@@ -129,7 +129,7 @@
 
 //   const handleDelete = async (id) => {
 //     try {
-//       await axios.delete(`http://localhost:5001/tasks/${id}`);
+//       await axios.delete(`https://task-management-server-qh4x.onrender.com/tasks/${id}`);
 //       setTasks(tasks.filter((task) => task._id !== id));
 //       // Optionally, you can show a success message here using toast or any other method
 //     } catch (error) {
@@ -197,7 +197,7 @@ function AllTasks() {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch('http://localhost:5001/tasks');
+      const res = await fetch('https://task-management-server-qh4x.onrender.com/tasks');
       const data = await res.json();
       setTasks(data);
       setLoading(false);
@@ -210,7 +210,7 @@ function AllTasks() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5001/tasks/${id}`);
+      await axios.delete(`https://task-management-server-qh4x.onrender.com/tasks/${id}`);
       setTasks(tasks.filter((task) => task._id !== id));
       // Optionally, you can show a success message here using toast or any other method
     } catch (error) {
