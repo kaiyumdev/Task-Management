@@ -10,6 +10,7 @@ import DashboardLayout from "../layouts/DashboardLayouts/DashboardLayouts";
 import Dashboard from "../layouts/DashboardLayouts/Dashboard";
 import PrivateRoute from "./PrivateRoutes/PrivateRoutes";
 import AddTask from "../layouts/DashboardLayouts/AddTask";
+import AllTasks from "../layouts/DashboardLayouts/AllTasks";
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard/addTask",
         element: <PrivateRoute><AddTask></AddTask></PrivateRoute>
+      },
+      {
+        path: "/dashboard/allTasks",
+        element: <PrivateRoute><AllTasks></AllTasks></PrivateRoute>
       }
     ],
   },

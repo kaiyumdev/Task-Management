@@ -57,7 +57,7 @@ function AddTask() {
           </select>
           {errors.priority && <p className="text-red-500 text-xs mt-1">{errors.priority.message}</p>}
         </div>
-        <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Create</button>
+        <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Create Task</button>
       </form>
     </div>
   );

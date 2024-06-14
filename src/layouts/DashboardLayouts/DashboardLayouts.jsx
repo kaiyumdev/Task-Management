@@ -14,7 +14,7 @@ const DashboardLayout = () => {
             <Link to={"/dashboard"}>Dashboard</Link>
           </li>
           <li className="border border-black p-4 text w-full">
-            <Link to={""}>All Tasks</Link>
+            <Link to={"/dashboard/allTasks"}>All Tasks</Link>
           </li>
           <li className="border border-black p-4 text w-full">
             <Link to={"/dashboard/addTask"}>Add Task</Link>
