@@ -69,10 +69,15 @@ function AddTask() {
   const { register, handleSubmit, formState: { errors } } = useForm();
 //   const history = useHistory();
 
-  const onSubmit = (data) => {
-    axios.post('http://localhost:5000/tasks', data)
-      .then((data) => console.log(data))
-      .catch(error => console.error(error));
+  const onSubmit = async(data) => {
+    console.log(data)
+    await fetch("http://localhost:5001/tasks", {
+        method: "POST",
+        headers:{ "Content-type": "application/json"},
+        body: JSON.stringify(data)
+    }).then((res) => res.json()).then((data) => {
+        console.log(data)
+    })
   };
 
   return (
