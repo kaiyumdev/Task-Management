@@ -9,6 +9,7 @@ import SingUp from "../Shared/SingUp";
 import DashboardLayout from "../layouts/DashboardLayouts/DashboardLayouts";
 import Dashboard from "../layouts/DashboardLayouts/Dashboard";
 import PrivateRoute from "./PrivateRoutes/PrivateRoutes";
+import AddTask from "../layouts/DashboardLayouts/AddTask";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: "/dashboard/addTask",
+        element: <PrivateRoute><AddTask></AddTask></PrivateRoute>
+      }
     ],
   },
 ]);

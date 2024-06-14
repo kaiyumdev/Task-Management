@@ -1,30 +1,30 @@
 import React from 'react';
-import Manager from "../../assets/images/Managers.jpg"
-import team from "../../assets/images/team.jpg"
-import Freelancers from "../../assets/images/Freelancers.jpg"
-import Students from "../../assets/images/Students.jpg"
+// import Manager from "../../assets/images/Managers.jpg"
+// import team from "../../assets/images/team.jpg"
+// import Freelancers from "../../assets/images/Freelancers.jpg"
+// import Students from "../../assets/images/Students.jpg"
 
 const UserPerson = () => {
   const personas = [
     {
       title: "Project Managers",
       description: "Keep track of project milestones, assign tasks, and monitor team progress efficiently.",
-      icon: Manager,
+      icon: "/images/Manager.jpg",
     },
     {
       title: "Team Members",
       description: "Collaborate with your team, stay updated on task statuses, and contribute to project goals.",
-      icon: team,
+      icon: "/images/team.jpg",
     },
     {
       title: "Freelancers",
       description: "Organize your tasks, manage deadlines, and ensure you meet client expectations.",
-      icon: Freelancers,
+      icon: "/images/Freelancers.jpg",
     },
     {
       title: "Students",
       description: "Manage your assignments, plan your study schedule, and never miss a deadline.",
-      icon: Students,
+      icon: "/images/Students.jpg",
     }
   ];
 
