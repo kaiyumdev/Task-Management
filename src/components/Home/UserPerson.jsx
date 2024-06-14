@@ -1,8 +1,4 @@
 import React from 'react';
-// import Manager from "../../assets/images/Managers.jpg"
-// import team from "../../assets/images/team.jpg"
-// import Freelancers from "../../assets/images/Freelancers.jpg"
-// import Students from "../../assets/images/Students.jpg"
 
 const UserPerson = () => {
   const personas = [
